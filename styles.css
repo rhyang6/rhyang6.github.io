@@ -87,8 +87,6 @@ h2 {
 .row { display: flex; justify-content: space-between; gap: 16px; color: var(--text); }
 .dates { color: var(--muted); white-space: nowrap; }
 .sub { color: var(--muted); }
-.points { margin: 6px 0 0; padding-left: 18px; }
-.points li { margin-bottom: 3px; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

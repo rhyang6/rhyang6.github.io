@@ -109,28 +109,15 @@ const SITE = {
   experience: [
     {
       role: "Researcher", org: "Noah's Ark Laboratory", dates: "Jan 2024 – Present",
-      detail: "Embodied AI",
-      points: [
-        "First author of CAPE (ICRA 2026): training-free, collision-avoiding diffusion motion planning in cluttered scenes.",
-        "Co-first author of RA-DP (IROS 2025): closed-loop diffusion planning with 5× faster replanning.",
-        "Weak-to-strong data auto-improvement for diffusion controllers across MetaWorld, Push-T, RoboMimic, and ManiSkill2 (up to +9%).",
-        "End-to-end robot control pipelines combining perception (YOLO-World) and grasp generation (GraspNet) for live human-robot demos.",
-      ],
+      detail: "World action models and vision-language-action models for robotic manipulation; previously training-free guidance for diffusion policies.",
     },
     {
       role: "Research Intern", org: "Samsung AI Center", dates: "May 2023 – Dec 2023",
-      detail: "With Jimmy Li, Francois Hogan, Florian Shkurti, and Gregory Dudek",
-      points: [
-        "Instruction-guided image compositing with DINO-ViT keypoint correspondence and Stable Diffusion inpainting.",
-        "Tactile data collection with a Franka arm, force-torque and Finger-STS sensors; force estimation combining inverse FEM with neural networks.",
-      ],
+      detail: "Image compositing for robot learning and tactile sensing for force estimation, with Jimmy Li, Francois Hogan, Florian Shkurti, and Gregory Dudek.",
     },
     {
       role: "Research Intern", org: "Noah's Ark Laboratory", dates: "May 2020 – Aug 2022",
-      detail: "With Vahid Partovi Nia",
-      points: [
-        "Benchmarked low-bit quantized networks across classification, detection, segmentation, and spoken language understanding: 1.6× speed-up over the previous quantized SOTA (ICCV 2023, Interspeech 2022).",
-      ],
+      detail: "Low-bit quantization for vision and speech models, with Vahid Partovi Nia.",
     },
   ],
 
@@ -146,8 +133,8 @@ const SITE = {
   ],
 
   patents: [
-    { title: "Methods and System for Effective Guidance Application in Fast-Generative Methods", authors: "Rui Heng Yang, Leo Maxime Brunswic, Mark Chiu, et al.", status: "Pending, 2026" },
-    { title: "Dynamic Obstacle Avoidance Method for Closed-loop Embodied Manipulation", authors: "Yuhan Che, Yajun Gao, Xuan Zhao, Rui Heng Yang, Tongtong Cao", status: "Pending, 2026" },
+    { title: "Methods and System for Effective Guidance Application in Fast-Generative Methods", authors: "Rui Heng Yang, Leo Maxime Brunswic, Mark Chiu, et al.", status: "Filed, 2026" },
+    { title: "Dynamic Obstacle Avoidance Method for Closed-loop Embodied Manipulation", authors: "Yuhan Che, Yajun Gao, Xuan Zhao, Rui Heng Yang, Tongtong Cao", status: "Filed, 2026" },
     { title: "Efficient and Modular Flow-Matching Policy via Deconditioning", authors: "Leo Maxime Brunswic, Mateo Clemente, Rui Heng Yang, et al.", status: "Filed, 2025" },
     { title: "Predictive Failure Detection for Guided Diffusion Policy Adaptation to Uncertain Environments", authors: "Xuan Zhao, Rui Heng Yang, Sajjad Pakdamansavoji, et al.", status: "Filed, 2025" },
     { title: "Body-Aware Collision-free Motion Planning for Object Manipulation", authors: "Xuan Zhao, Rui Heng Yang, Leo Maxime Brunswic, et al.", status: "Filed, 2025" },

@@ -51,7 +51,6 @@ fill("#exp-list", SITE.experience.map((e) => `
   <li>
     <div class="row"><span><span class="title">${esc(e.org)}</span>, ${esc(e.role)}</span><span class="dates">${esc(e.dates)}</span></div>
     <span class="sub">${esc(e.detail)}</span>
-    <ul class="points">${e.points.map((pt) => `<li>${esc(pt)}</li>`).join("")}</ul>
   </li>`).join(""));
 
 fill("#edu-list", SITE.education.map((e) => `
@@ -63,7 +62,7 @@ fill("#edu-list", SITE.education.map((e) => `
 fill("#patent-list", SITE.patents.map((p) => `
   <li>
     <span class="title">${esc(p.title)}</span><br>
-    ${authorList(p.authors.split(", "))}. <span class="sub">${esc(p.status)}</span>
+    ${authorList(p.authors.split(", "))}${p.authors.endsWith(".") ? "" : "."} <span class="sub">${esc(p.status)}</span>
   </li>`).join(""));
 
 const toggle = document.querySelector("#theme-toggle");
