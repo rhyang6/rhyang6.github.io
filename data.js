@@ -10,7 +10,7 @@ const SITE = {
     {
       title: "Faster-WAM: Do World Action Models Need Deep Action Modules?",
       img: "assets/figs/faster-wam.jpg",
-      authors: ["Liheng Ma*", "Rui Heng Yang*", "Amin Soleimani Abyaneh", "George Z. Xue", "Behnam Rahmati", "Mateo Clémente", "Ziwen Hu", "Anlin Chen", "Tongtong Cao", "Zhanguang Zhang", "Yingxue Zhang"],
+      authors: ["Liheng Ma*", "Rui Heng Yang*", "Amin Soleimani Abyaneh", "George Z. Xue", "Behnam Rahmati", "Mateo Clemente", "Ziwen Hu", "Anlin Chen", "Tongtong Cao", "Zhanguang Zhang", "Yingxue Zhang"],
       venue: "arXiv",
       year: 2026, type: "preprint", featured: true,
       tldr: "A single-layer action expert reads keys and values from every layer of the video backbone via Lite KV-Fusion. Competitive on LIBERO and RoboTwin 2.0 at about 3.7× the speed of Fast-WAM, and 78.3% on LIBERO-Plus, 26.8 points above Fast-WAM.",
@@ -20,7 +20,7 @@ const SITE = {
       title: "Benchmarking Robotic Manipulation under Physically Realistic Dynamics",
       authors: ["Zhiyuan Li", "Rui Heng Yang", "Xuan Zhao", "Amir Rasouli"],
       venue: "NeurIPS RoboWM Workshop", year: 2026, type: "workshop",
-      links: {},
+      links: { Paper: "https://robodyna.github.io/robodyna/paper/robodyna_neurips2026_workshop.pdf" },
     },
     {
       title: "How VLAs (Really) Work In Open-World Environments",
@@ -56,7 +56,7 @@ const SITE = {
     },
     {
       title: "Two-Steps Diffusion Policy for Robotic Manipulation via Genetic Denoising",
-      authors: ["Mateo Clemente*", "Leo Brunswic*", "Rui Heng Yang", "Xuan Zhao", "Yasser Khalil", "Haoyu Lei", "Amir Rasouli", "Yinchuan Li"],
+      authors: ["Mateo Clemente*", "Leo Maxime Brunswic*", "Rui Heng Yang", "Xuan Zhao", "Yasser Khalil", "Haoyu Lei", "Amir Rasouli", "Yinchuan Li"],
       venue: "NeurIPS", year: 2025, type: "conference",
       links: { arXiv: "https://arxiv.org/abs/2510.21991" },
     },

@@ -45,7 +45,11 @@ h1 { font-size: 32px; font-weight: 400; margin: 0; }
 .sidebar .sidebar-name { color: var(--text); font-size: 16px; margin-bottom: 10px; }
 html { scroll-behavior: smooth; }
 section { scroll-margin-top: 24px; }
-@media (max-width: 1260px) { .sidebar { display: none; } }
+/* Section links under the header replace the sidebar when there is no room for it. */
+.topnav { display: none; flex-wrap: wrap; gap: 4px 16px; margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 15px; }
+.topnav a { color: var(--muted); }
+.topnav a:hover { color: var(--text); text-decoration: none; }
+@media (max-width: 1260px) { .sidebar { display: none; } .topnav { display: flex; } }
 
 h2 {
   font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
