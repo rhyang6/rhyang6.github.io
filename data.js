@@ -109,7 +109,7 @@ const SITE = {
   experience: [
     {
       role: "Researcher", org: "Noah's Ark Laboratory", dates: "Jan 2024 – Present",
-      detail: "World action models and VLAs for robot manipulation, mostly making WAMs real-time and small enough to run on edge devices, and testing how well they hold up in new scenes. Before that, training-free guidance for diffusion policies.",
+      detail: "World action models and vision-language-action models for robotic manipulation, with a focus on real-time inference and deployment on edge devices, as well as robustness in unseen environments. Previously, training-free guidance for diffusion policies.",
     },
     {
       role: "Research Intern", org: "Samsung AI Center", dates: "May 2023 – Dec 2023",
