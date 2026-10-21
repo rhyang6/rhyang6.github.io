@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- Author: Rui Heng Yang -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rui Heng Yang</title>
+  <meta name="description" content="Rui Heng Yang, researcher at Noah's Ark Laboratory working on world action models and vision-language-action models for robotic manipulation.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply the saved or system theme before first paint to avoid a flash.
+    (function () {
+      let saved = null;
+      try { saved = localStorage.getItem("theme"); } catch { /* storage blocked: use system theme */ }
+      const dark = saved ? saved === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = dark ? "dark" : "light";
+    })();
+  </script>
+</head>
+<body>
+  <button type="button" id="theme-toggle" class="theme-toggle" role="switch" aria-label="Dark mode">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <span class="track"><span class="knob"></span></span>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+  </button>
+  <nav class="sidebar" aria-label="Sections">
+    <a href="#top" class="sidebar-name">Rui Heng Yang</a>
+    <a href="#about">About</a>
+    <a href="#selected">Selected work</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#patents">Patents</a>
+  </nav>
+  <main id="top">
+    <header>
+      <h1>Rui Heng Yang</h1>
+      <p class="meta">Researcher, Noah's Ark Laboratory</p>
+      <p class="contact">
+        <a href="mailto:ruihengyang6@hotmail.com">Email</a>
+        <a href="https://scholar.google.ca/citations?user=rZIiTroAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="assets/Rui_Heng_Yang_CV.pdf" target="_blank">CV</a>
+      </p>
+    </header>
+
+    <section id="about">
+      <p>
+        I am a researcher at Noah's Ark Laboratory working on embodied AI. My current work is on world action
+        models and vision-language-action models for robotic manipulation, with a focus on real-time world
+        action models. Before this, I developed training-free guidance methods for diffusion policies that let
+        a trained policy avoid collisions and replan at inference time. I joined Noah's Ark full time after
+        research internships at Samsung AI Center and Noah's Ark, and I hold an M.Sc. in Applied Computing from
+        the University of Toronto and an Honours B.Sc. in Computer Science from McGill University.
+      </p>
+    </section>
+
+    <section id="selected">
+      <h2>Selected work</h2>
+      <div class="cards" id="highlight-cards"></div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="note">* equal contribution</p>
+      <ul class="list" id="pub-list"></ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="list" id="exp-list"></ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="list" id="edu-list"></ul>
+    </section>
+
+    <section id="patents">
+      <h2>Patent applications</h2>
+      <ul class="list" id="patent-list"></ul>
+    </section>
+
+    <footer>Last updated October 2026</footer>
+  </main>
+
+  <dialog id="lightbox" aria-label="Enlarged figure">
+    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="">
+  </dialog>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
