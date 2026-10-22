@@ -9,7 +9,7 @@ that opens directly from disk; rebuild it after any edit to the sources or `asse
 python3 build_single.py
 ```
 
-- **Content:** edit `data.js` for publications, experience, patents, and education. Edit `index.html` for the bio and sidebar links.
+- **Content:** edit `data.js` for publications, experience, patents, and education. Edit `index.html` for the bio and sidebar links, and `hobbies.html` for the Hobbies page (not included in the single-file bundle).
 - **Style:** colours and fonts are CSS variables at the top of `styles.css`.
 - **CV:** replace `assets/Rui_Heng_Yang_CV.pdf`.
 
