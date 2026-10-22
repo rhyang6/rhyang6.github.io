@@ -124,11 +124,11 @@ const SITE = {
   education: [
     {
       degree: "M.Sc. in Applied Computing (Artificial Intelligence)", school: "University of Toronto",
-      dates: "2023", note: "GPA 4.0/4.0 · Lead TA, CSC110 & CSC111",
+      dates: "2022 – 2023", note: "GPA 4.0/4.0 · Lead TA, CSC110 & CSC111",
     },
     {
       degree: "B.Sc. Honours Computer Science", school: "McGill University",
-      dates: "2022", note: "First Class Honours · Internship Program · GPA 3.86/4.0",
+      dates: "2018 – 2022", note: "First Class Honours · Internship Program · GPA 3.86/4.0",
     },
   ],
 
