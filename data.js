@@ -13,7 +13,7 @@ const SITE = {
       authors: ["Liheng Ma*", "Rui Heng Yang*", "Amin Soleimani Abyaneh", "George Z. Xue", "Behnam Rahmati", "Mateo Clemente", "Ziwen Hu", "Anlin Chen", "Tongtong Cao", "Zhanguang Zhang", "Yingxue Zhang"],
       venue: "arXiv",
       year: 2026, type: "preprint", featured: true,
-      tldr: "A single-layer action expert reads keys and values from every layer of the video backbone via Lite KV-Fusion. Competitive on LIBERO and RoboTwin 2.0 at about 3.7× the speed of Fast-WAM, and 78.3% on LIBERO-Plus, 26.8 points above Fast-WAM.",
+      tldr: "A world action model with a single-layer action expert that reads every layer of the video backbone through a novel docking interface. Real-time inference latency of 52 ms per action chunk (19 Hz) on an RTX 4090. Competitive with existing WAMs in success rate while completing real-robot tasks 1.1–4.5× faster.",
       links: { arXiv: "https://arxiv.org/abs/2608.02365" },
     },
     {
@@ -45,7 +45,7 @@ const SITE = {
       img: "assets/figs/cape.jpg",
       authors: ["Rui Heng Yang*", "Xuan Zhao*", "Leo Maxime Brunswic", "Montgomery Alban", "Mateo Clemente", "Tongtong Cao", "Jun Jin", "Amir Rasouli"],
       venue: "ICRA", year: 2026, type: "conference", featured: true,
-      tldr: "A training-free planner that refines trajectory priors with observation guidance at inference time, giving context-aware, collision-avoiding actions from a policy trained only on point-to-point trajectories. Up to +56 points in success rate in simulation and +80 on a real robot over MPD. Patent filed.",
+      tldr: "A diffusion-based motion planner that avoids collisions without retraining, trained only on point-to-point trajectories collected in obstacle-free environments. At inference, it re-noises the unexecuted part of the plan into a context-aware prior and refines it with collision guidance. Improves success rate over MPD from 38% to 94% in simulation and from 0/5 to 4/5 in a cluttered real-world task. Patent filed.",
       links: { arXiv: "https://arxiv.org/abs/2511.22773" },
     },
     {
@@ -65,7 +65,7 @@ const SITE = {
       img: "assets/figs/ra-dp-system.jpg",
       authors: ["Xi Ye*", "Rui Heng Yang*", "Jun Jin", "Yinchuan Li", "Amir Rasouli"],
       venue: "IROS", year: 2025, type: "conference", featured: true,
-      tldr: "Closed-loop diffusion motion planning with training-free collision avoidance through high-frequency replanning: 5× the replanning frequency of prior methods. Patent filed.",
+      tldr: "A diffusion policy with training-free, high-frequency replanning: an action queue emits a replanned action at every denoising step, while guidance injects obstacle information without retraining. Raises replanning frequency on MetaWorld from 16 Hz to 82 Hz over DP3, and obstacle-avoidance success over guided DP from 15% to 63% (static) and 10% to 45% (moving). Patent filed.",
       links: { arXiv: "https://arxiv.org/abs/2503.04051" },
     },
     {
