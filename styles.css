@@ -57,6 +57,10 @@ h2 {
 }
 .note { color: var(--muted); font-size: 14px; margin-top: -6px; }
 
+/* About: portrait floated beside the bio; the section clears it so the next heading starts below. */
+#about { display: flow-root; }
+.profile { float: right; width: 170px; height: auto; margin: 4px 0 12px 28px; border-radius: 6px; }
+
 /* Selected work */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .card {
@@ -104,4 +108,5 @@ footer { margin-top: 56px; font-size: 13px; color: var(--muted); }
   main { padding-top: 40px; }
   .cards { grid-template-columns: 1fr; }
   .row { flex-direction: column; gap: 0; }
+  .profile { width: 120px; margin-left: 18px; }
 }
