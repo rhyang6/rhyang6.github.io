@@ -21,7 +21,7 @@ h1 { font-size: 32px; font-weight: 400; margin: 0; }
 .meta { color: var(--muted); margin: 2px 0 10px; }
 .contact a { margin-right: 18px; }
 .theme-toggle {
-  position: fixed; top: 20px; right: 24px; display: flex; align-items: center; gap: 8px;
+  position: absolute; top: 20px; right: 24px; display: flex; align-items: center; gap: 8px;
   background: none; border: 0; padding: 4px; cursor: pointer; color: var(--muted);
 }
 .theme-toggle:hover { color: var(--text); }
