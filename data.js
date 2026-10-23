@@ -13,7 +13,7 @@ const SITE = {
       authors: ["Liheng Ma*", "Rui Heng Yang*", "Amin Soleimani Abyaneh", "George Z. Xue", "Behnam Rahmati", "Mateo Clemente", "Ziwen Hu", "Anlin Chen", "Tongtong Cao", "Zhanguang Zhang", "Yingxue Zhang"],
       venue: "arXiv",
       year: 2026, type: "preprint", featured: true,
-      tldr: "A world action model with a single-layer action expert that reads every layer of the video backbone through a novel docking interface. Real-time inference latency of 52 ms per action chunk (19 Hz) on an RTX 4090. Competitive with existing WAMs in success rate while completing real-robot tasks 1.1–4.5× faster.",
+      tldr: "A world action model with a single-layer action expert that reads every layer of the video backbone through a novel docking interface. Real-time inference latency of 52 ms per action chunk (19 Hz). Competitive with existing WAMs in success rate while completing real-robot tasks 1.1–4.5× faster.",
       links: { arXiv: "https://arxiv.org/abs/2608.02365" },
     },
     {
