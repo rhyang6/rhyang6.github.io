@@ -75,7 +75,8 @@ h2 {
 
 /* Hobbies photo rows: flex-grow set to each photo's aspect ratio so all photos in a row share one height. */
 .album { font-size: 15px; font-weight: 600; margin: 0 0 10px; }
-.photo-row { display: flex; gap: 8px; margin-bottom: 28px; }
+.photo-row { display: flex; gap: 8px; margin-bottom: 8px; }
+.album:not(:first-of-type) { margin-top: 28px; }
 .photo-row a { display: block; min-width: 0; }
 .photo-row img { display: block; width: 100%; height: auto; border-radius: 4px; }
 
