@@ -1,0 +1,4 @@
+# Author: Rui Heng Yang
+User-agent: *
+Allow: /
+Sitemap: https://rhyang6.github.io/sitemap.xml
