@@ -99,6 +99,9 @@ h2 {
 .paper-link:hover { color: var(--link); }
 .me { color: var(--text); text-decoration: underline; text-underline-offset: 2px; }
 .venue { font-style: italic; }
+.extra-links a, .card-links a { color: var(--link); text-decoration: none; font-size: 14px; }
+.extra-links a:hover, .card-links a:hover { text-decoration: underline; }
+.card-links { margin: 8px 0 0; }
 .row { display: flex; justify-content: space-between; gap: 16px; color: var(--text); }
 .dates { color: var(--muted); white-space: nowrap; }
 .sub { color: var(--muted); }

@@ -21,6 +21,14 @@ function titleLink(p, text) {
   return `<a class="paper-link" href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
 }
 
+// Optional resource links follow the venue in the list and the summary in cards.
+function extraLinks(p) {
+  if (!p.extra) return "";
+  return ` <span class="extra-links">${Object.entries(p.extra)
+    .map(([label, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener">[${esc(label)}]</a>`)
+    .join(" ")}</span>`;
+}
+
 // The figure is a button that opens it full size in the #lightbox dialog.
 function cardFigure(p) {
   const alt = `${p.title.split(":")[0]} overview figure`;
@@ -38,13 +46,14 @@ fill("#highlight-cards", SITE.publications.filter((p) => p.featured).map((p) => 
     <p class="card-venue">${esc(p.venueShort || p.venue)} ${p.year}</p>
     <h3>${titleLink(p, p.title.split(":")[0])}</h3>
     <p>${esc(p.tldr)}</p>
+    ${p.extra ? `<p class="card-links">${extraLinks(p)}</p>` : ""}
   </article>`).join(""));
 
 fill("#pub-list", SITE.publications.map((p) => `
   <li>
     <span class="title">${titleLink(p, p.title)}</span><br>
     ${authorList(p.authors)}<br>
-    <span class="venue">${esc(p.venue)} ${p.year}</span>
+    <span class="venue">${esc(p.venue)} ${p.year}</span>${extraLinks(p)}
   </li>`).join(""));
 
 fill("#exp-list", SITE.experience.map((e) => `
